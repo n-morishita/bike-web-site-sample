@@ -1,0 +1,191 @@
+/* * {
+    all: unset;
+    display: revert;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 9px 0;
+}
+
+header img {
+    margin: 0;
+    display: flex;
+}
+
+.header-container a {
+    padding: 0 15px;
+    font-size: 90%;
+    text-decoration: none;
+    color: black;
+}
+
+.header-container a:hover {
+    opacity: 0.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+main img {
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+main section h1 {
+    padding-bottom: 3px;
+    padding-top: 30px;
+    border-bottom: solid black 0.5px;
+    font-size: 35px;
+    color: rgb(62, 62, 62);
+    margin: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+}
+
+.about-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-contents p{
+    margin: 0;
+}
+
+.about-my-name p{
+    font-weight: bold;
+    padding: 7px 0;
+}
+
+.bicycle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.bicycle-container div {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bicycle-container img {
+    width: 95%;
+    height: 95%;
+}
+
+.bicycle-container p {
+    margin: 0;
+    width: 95%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.bicycle-title {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 5px;
+}
+
+@media screen and (max-width: 700px) {
+
+    header {
+        padding: 9px 5px;
+    }
+
+    header img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-my-name {
+        margin: 10px;
+    }
+
+    .about-texts {
+        word-wrap: break-word;
+        /* text-align: center; */
+        width: 80%;
+    }
+
+
+    .bicycle-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bicycle-container div {
+        width: 80%;
+    }
+
+    .bicycle-container p {
+        width: 100%;
+    }
+    
+    .bicycle-texts {
+        padding-bottom: 50px;
+    }
+}
